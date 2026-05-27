@@ -52,8 +52,7 @@ export function SpeechBubble() {
         </g>
       </svg>
       <div className="absolute inset-[26px_28px_36px_28px] grid place-content-center text-center">
-        <p className="m-0 relative z-[1]">私は、目立たない。</p>
-        <p className="m-0 relative z-[1]">でも、誰より必要とされてる。</p>
+        <p className="m-0 relative z-[1]">Welcome. Take a look around.</p>
       </div>
       <span
         className="absolute rounded-full bg-ivory z-[1]"
