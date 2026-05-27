@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon-900: #3D0A14;
+  --color-maroon-800: #5A0F1F;
+  --color-maroon-700: #7A1530;
+  --color-maroon-600: #9B1B3D;
+  --color-maroon-500: #B8294F;
+  --color-maroon-400: #D63B6B;
+  --color-rose-500: #E94B7B;
+  --color-rose-400: #F06D94;
+  --color-rose-300: #F8AABF;
+  --color-cream-50: #FFF6EE;
+  --color-cream-100: #FBE7DA;
+  --color-ivory: #FFFAF3;
+  --color-gold-500: #E0B14A;
+  --color-gold-400: #F2C969;
+  --color-gem-500: #C56A8A;
+  --color-gem-400: #D88AA6;
+  --color-ink-900: #2A0810;
+  --color-ink-700: #4A1925;
+  --color-ink-600: #6B3340;
+  --color-ink-400: #9B6675;
+  --font-jp: "Zen Maru Gothic", "M PLUS Rounded 1c", "Noto Sans JP", system-ui, sans-serif;
+  --font-jp-rounded: "M PLUS Rounded 1c", "Noto Sans JP", system-ui, sans-serif;
+  --font-num: "Bebas Neue", "Noto Sans JP", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #1a0508;
+  font-family: var(--font-jp);
+  color: var(--color-ink-900);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: inherit;
+}
+
+@keyframes float-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes float-in-rot {
+  from { opacity: 0; transform: rotate(-6deg) translateY(12px); }
+  to   { opacity: 1; transform: rotate(-6deg) translateY(0); }
+}
+@keyframes pop-in {
+  0%   { opacity: 0; transform: scale(0.9); }
+  60%  { opacity: 1; transform: scale(1.04); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.anim-float       { animation: float-in 0.6s 0.05s both ease-out; }
+.anim-float-1     { animation: float-in 0.6s 0.15s both ease-out; }
+.anim-float-2     { animation: float-in 0.6s 0.22s both ease-out; }
+.anim-float-3     { animation: float-in 0.6s 0.30s both ease-out; }
+.anim-pop         { animation: pop-in   0.55s 0.45s both ease-out; }
+.anim-float-rot   { animation: float-in-rot 0.7s 0.35s both ease-out; }
+.anim-nav         { animation: float-in 0.6s 0.10s both ease-out; }
