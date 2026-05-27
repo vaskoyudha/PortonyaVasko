@@ -8,46 +8,6 @@ export function EventTile() {
       }}
       aria-label="イベント"
     >
-      <div className="absolute inset-0">
-        <svg
-          viewBox="0 0 100 130"
-          width="100%"
-          height="100%"
-          preserveAspectRatio="xMidYMid slice"
-          aria-hidden="true"
-        >
-          <defs>
-            <linearGradient id="evbg" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#FBE7DA" />
-              <stop offset="100%" stopColor="#F8AABF" />
-            </linearGradient>
-            <linearGradient id="skinG" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#FFE4D2" />
-              <stop offset="100%" stopColor="#FFD0AF" />
-            </linearGradient>
-            <linearGradient id="hairG" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#F2C969" />
-              <stop offset="100%" stopColor="#E0B14A" />
-            </linearGradient>
-          </defs>
-          <rect width="100" height="130" fill="url(#evbg)" />
-          <g transform="translate(38 48)">
-            <ellipse cx="35" cy="38" rx="25" ry="27" fill="url(#skinG)" />
-            <path
-              d="M10 38 Q8 6 35 4 Q62 6 60 38 Q60 50 56 54 Q52 38 46 40 Q40 28 35 30 Q30 28 24 40 Q18 38 14 54 Q10 50 10 38 Z"
-              fill="url(#hairG)"
-            />
-            <ellipse cx="26" cy="44" rx="2.4" ry="3.6" fill="#3D0A14" />
-            <ellipse cx="44" cy="44" rx="2.4" ry="3.6" fill="#3D0A14" />
-            <circle cx="26.8" cy="42.6" r="0.9" fill="#FFFFFF" />
-            <circle cx="44.8" cy="42.6" r="0.9" fill="#FFFFFF" />
-            <ellipse cx="20" cy="50" rx="2.4" ry="1.4" fill="#E94B7B" opacity="0.6" />
-            <ellipse cx="50" cy="50" rx="2.4" ry="1.4" fill="#E94B7B" opacity="0.6" />
-            <path d="M32 54 q3 2.4 6 0" stroke="#7A1530" strokeWidth="1.1" fill="none" strokeLinecap="round" />
-          </g>
-          <path d="M40 94 L50 106 L60 94 L60 130 L40 130 Z" fill="#B8294F" />
-        </svg>
-      </div>
       <span
         className="absolute top-2.5 left-2.5 z-[2] inline-flex items-center px-3 py-[3px] rounded-full font-jp-rounded font-extrabold text-[11px] tracking-[0.06em] text-white leading-[1.4]"
         style={{

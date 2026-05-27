@@ -1,6 +1,4 @@
-import { ProfileCard } from "./ProfileCard";
 import { MissionCard } from "./MissionCard";
-import { EventTile } from "./EventTile";
 import { TopRight } from "./TopRight";
 import { SpeechBubble } from "./SpeechBubble";
 import { LessonCard } from "./LessonCard";
@@ -27,9 +25,7 @@ export function Stage() {
         }}
         aria-label="Idol training home screen"
       >
-        <ProfileCard />
         <MissionCard />
-        <EventTile />
         <TopRight />
         <SpeechBubble />
         <LessonCard />
