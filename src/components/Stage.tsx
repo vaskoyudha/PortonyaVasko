@@ -1,6 +1,12 @@
 import { MissionCard } from "./MissionCard";
 import { LessonCard } from "./LessonCard";
 import { BottomNav } from "./BottomNav";
+import HeroHeader from "./HeroHeader";
+import StatBars from "./StatBars";
+import FloorIndicator from "./FloorIndicator";
+import AchievementPopup from "./AchievementPopup";
+import MinimapWidget from "./MinimapWidget";
+import { SpeechBubble } from "./SpeechBubble";
 
 export function Stage() {
   return (
@@ -23,7 +29,13 @@ export function Stage() {
         }}
         aria-label="Idol training home screen"
       >
+        <HeroHeader />
+        <FloorIndicator />
+        <StatBars />
+        <AchievementPopup />
         <MissionCard />
+        <MinimapWidget />
+        <SpeechBubble />
         <LessonCard />
         <BottomNav />
       </main>
