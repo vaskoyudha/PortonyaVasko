@@ -21,10 +21,23 @@
   --color-ink-700: #4A1925;
   --color-ink-600: #6B3340;
   --color-ink-400: #9B6675;
-  --font-jp: "Zen Maru Gothic", "M PLUS Rounded 1c", "Noto Sans JP", system-ui, sans-serif;
-  --font-jp-rounded: "M PLUS Rounded 1c", "Noto Sans JP", system-ui, sans-serif;
-  --font-num: "Bebas Neue", "Noto Sans JP", system-ui, sans-serif;
+  --font-jp: "Pixelify Sans", "Geist", system-ui, sans-serif;
+  --font-jp-rounded: "Pixelify Sans", "Geist", system-ui, sans-serif;
+  --font-num: "Pixelify Sans", "Geist", system-ui, sans-serif;
 }
+
+/* ──────────────────────────────────────────────────────────────
+   Z-INDEX SCALE (locked hierarchy — do not reorder)
+   ──────────────────────────────────────────────────────────────
+   bg               : 0   — Stage background image / base layer
+   content          : 5   — primary card content (profile, lesson, event)
+   overlay          : 6   — soft overlays / vignette / scrims
+   hud              : 8   — HUD elements (currency, icons, top-right)
+   bottomnav        : 10  — sliding-pill bottom navigation
+   mission-badge    : 15  — floating mission tab badge
+   achievement-popup: 20  — achievement / level-up toast
+   speech-bubble    : 22  — character dialogue bubble (top-most)
+   ────────────────────────────────────────────────────────────── */
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -60,11 +73,18 @@ button {
   60%  { opacity: 1; transform: scale(1.04); }
   100% { opacity: 1; transform: scale(1); }
 }
+@keyframes pop-toast {
+  from { opacity: 0; transform: scale(0.85) translateY(-10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
 
 .anim-float       { animation: float-in 0.6s 0.05s both ease-out; }
 .anim-float-1     { animation: float-in 0.6s 0.15s both ease-out; }
 .anim-float-2     { animation: float-in 0.6s 0.22s both ease-out; }
 .anim-float-3     { animation: float-in 0.6s 0.30s both ease-out; }
 .anim-pop         { animation: pop-in   0.55s 0.45s both ease-out; }
+.anim-pop-toast   {
+  animation: pop-toast 0.35s ease-out both;
+}
 .anim-float-rot   { animation: float-in-rot 0.7s 0.35s both ease-out; }
 .anim-nav         { animation: float-in 0.6s 0.10s both ease-out; }

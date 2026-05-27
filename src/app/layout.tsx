@@ -10,12 +10,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ja">
+    <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+Rounded+1c:wght@500;700;800;900&family=Noto+Sans+JP:wght@500;700;800;900&family=Zen+Maru+Gothic:wght@700;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&family=Pixelify+Sans:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </head>

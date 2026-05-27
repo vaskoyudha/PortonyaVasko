@@ -1,11 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-const TABS = ["ホーム", "ストーリー", "育成", "ガチャ", "ショップ"] as const;
+const TABS = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Skills", href: "/skills" },
+  { label: "Projects", href: "/projects" },
+  { label: "Contact", href: "/contact" },
+] as const;
 
 export function BottomNav() {
-  const [active, setActive] = useState(0);
+  const pathname = usePathname();
+  const matchedIndex = TABS.findIndex((t) => t.href === pathname);
+  const active = matchedIndex === -1 ? 0 : matchedIndex;
 
   return (
     <div
@@ -26,7 +35,7 @@ export function BottomNav() {
             paddingLeft: 6,
             paddingRight: 6,
             boxShadow:
-              "0 0 0 2px #FFFAF3, 0 8px 0 0 rgba(90, 15, 31, 0.18), 0 16px 28px rgba(60, 8, 20, 0.28)",
+              "0 0 0 2px #FFFAF3, -8px 8px 0 0 #5A0F1F, -10px 14px 22px rgba(60, 8, 20, 0.45)",
           }}
         >
           <span
@@ -53,14 +62,13 @@ export function BottomNav() {
             }}
           />
 
-          {TABS.map((label, i) => {
+          {TABS.map((tab, i) => {
             const isActive = i === active;
             const showDivider = i > 0 && i !== active && i - 1 !== active;
             return (
-              <button
-                key={label}
-                type="button"
-                onClick={() => setActive(i)}
+              <Link
+                key={tab.href}
+                href={tab.href}
                 className="relative flex-1 grid place-items-center h-full font-jp-rounded font-extrabold whitespace-nowrap cursor-pointer"
                 style={{
                   color: isActive ? "#FFFAF3" : "#5A0F1F",
@@ -71,6 +79,7 @@ export function BottomNav() {
                   zIndex: 3,
                   background: "transparent",
                   border: "none",
+                  textDecoration: "none",
                 }}
               >
                 {showDivider && (
@@ -86,8 +95,8 @@ export function BottomNav() {
                     }}
                   />
                 )}
-                {label}
-              </button>
+                {tab.label}
+              </Link>
             );
           })}
         </div>

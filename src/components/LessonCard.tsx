@@ -6,7 +6,7 @@ export function LessonCard() {
         transform: "rotate(-6deg)",
         filter: "drop-shadow(0 12px 24px rgba(122, 21, 48, 0.55))",
       }}
-      aria-label="授業"
+      aria-label="Lesson"
     >
       <svg
         className="absolute z-[3]"
@@ -56,17 +56,17 @@ export function LessonCard() {
             gridColumn: 1,
             alignSelf: "center",
             justifySelf: "center",
-            fontSize: 108,
+            fontSize: 64,
             lineHeight: 0.9,
-            letterSpacing: "-4px",
+            letterSpacing: "-2px",
             color: "transparent",
-            WebkitTextStroke: "6px #F8AABF",
+            WebkitTextStroke: "5px #F8AABF",
             textShadow:
               "3px 3px 0 #7A1530, 5px 5px 0 #5A0F1F, 0 8px 14px rgba(60, 8, 20, 0.55)",
           }}
           aria-hidden="true"
         >
-          授業
+          LESSON
         </div>
         <span
           className="font-jp font-black text-center relative z-[2]"
@@ -75,15 +75,15 @@ export function LessonCard() {
             gridColumn: 1,
             alignSelf: "center",
             justifySelf: "center",
-            fontSize: 108,
+            fontSize: 64,
             lineHeight: 0.9,
-            letterSpacing: "-4px",
+            letterSpacing: "-2px",
             color: "#FFFAF3",
             textShadow:
               "-1.5px -1.5px 0 #FBE7DA, 1.5px 1.5px 0 #7A1530, 3px 3px 0 #5A0F1F, 5px 5px 0 #3D0A14",
           }}
         >
-          授業
+          LESSON
         </span>
         <div
           className="relative z-[3] flex items-center justify-center mx-auto"

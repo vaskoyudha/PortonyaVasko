@@ -2,7 +2,7 @@ export function MissionCard() {
   return (
     <section
       className="absolute top-[210px] left-9 w-[290px] z-[5] anim-float-1"
-      aria-label="ミッション"
+      aria-label="Mission"
       style={{ filter: "drop-shadow(-5px 8px 0 #7A1020) drop-shadow(-6px 14px 16px rgba(122, 16, 32, 0.45))" }}
     >
       <span
@@ -28,7 +28,7 @@ export function MissionCard() {
             textShadow: "0 1px 1px rgba(0, 0, 0, 0.4)",
           }}
         >
-          ミッション
+          MISSION
         </span>
       </span>
 
@@ -72,9 +72,9 @@ export function MissionCard() {
             className="font-jp-rounded font-extrabold leading-[1.5] flex-1"
             style={{ fontSize: 13, color: "#8B1525", letterSpacing: "0.01em" }}
           >
-            授業を受けてレベルを
+            Take lessons and raise
             <br />
-            20まで上げよう
+            your level to 20
           </p>
         </div>
       </div>
