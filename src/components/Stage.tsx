@@ -1,5 +1,4 @@
 import { MissionCard } from "./MissionCard";
-import { TopRight } from "./TopRight";
 import { SpeechBubble } from "./SpeechBubble";
 import { LessonCard } from "./LessonCard";
 import { BottomNav } from "./BottomNav";
@@ -26,7 +25,6 @@ export function Stage() {
         aria-label="Idol training home screen"
       >
         <MissionCard />
-        <TopRight />
         <SpeechBubble />
         <LessonCard />
         <BottomNav />
