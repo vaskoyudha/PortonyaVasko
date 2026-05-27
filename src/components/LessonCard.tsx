@@ -66,7 +66,7 @@ export function LessonCard() {
           }}
           aria-hidden="true"
         >
-          LESSON
+          TRAINING
         </div>
         <span
           className="font-jp font-black text-center relative z-[2]"
@@ -83,7 +83,7 @@ export function LessonCard() {
               "-1.5px -1.5px 0 #FBE7DA, 1.5px 1.5px 0 #7A1530, 3px 3px 0 #5A0F1F, 5px 5px 0 #3D0A14",
           }}
         >
-          LESSON
+          TRAINING
         </span>
         <div
           className="relative z-[3] flex items-center justify-center mx-auto"
@@ -112,7 +112,7 @@ export function LessonCard() {
               textShadow: "0 1px 0 #7A1530",
             }}
           >
-            Lesson:01
+            Agentic Harnessing
           </span>
           <span
             className="bg-ivory"

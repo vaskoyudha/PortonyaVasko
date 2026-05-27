@@ -72,9 +72,7 @@ export function MissionCard() {
             className="font-jp-rounded font-extrabold leading-[1.5] flex-1"
             style={{ fontSize: 13, color: "#8B1525", letterSpacing: "0.01em" }}
           >
-            Take lessons and raise
-            <br />
-            your level to 20
+            Mastering AI engineering
           </p>
         </div>
       </div>
