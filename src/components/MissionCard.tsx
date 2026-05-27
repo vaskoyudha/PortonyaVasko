@@ -16,7 +16,7 @@ export function MissionCard() {
           background: "#8B1525",
           border: "3px solid #FFFAF3",
           borderBottom: "none",
-          borderRadius: "14px 14px 0 0",
+          borderRadius: "20px 20px 0 0",
         }}
       >
         <span
